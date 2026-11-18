@@ -153,6 +153,11 @@ STATIC_URL = 'static/'
 
 MAILERS = {
     'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
+        'BACKEND': 'django.core.mail.backends.console.smtp.EmailBackend',
+        'HOST': 'smtp.mail.yahoo.com',
+        'PORT': 587,
+        'USER': 'nozimbek924@gmail.com',
+        'PASSWORD': 'lidrfhiqvgfzegmt',
+        'USE_TLS': True,
     },
 }
